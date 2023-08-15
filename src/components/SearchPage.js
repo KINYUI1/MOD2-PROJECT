@@ -1,18 +1,26 @@
-function SearchPage({search,setSearch,handlesearch,setCountry}) {
-    const handlechange = (e)=>{
+import '../App.css'
+
+function SearchPage({search,setSearch,handleSearch,setCountry,setUrl}) {
+    const handleChange = (e)=>{
         setSearch(e.target.value)
     }
-    const handleselect = (e)=>{
+    const API_KEY = `f2ed20b73bed4bff995872e5c0c5f061`
+    const handleSelect = (e)=>{
+        e.preventDefault();
+       console.log('search',e.target.value);
         setCountry(e.target.value);
+        setUrl(`https://newsapi.org/v2/top-headlines?country=${e.target.value}&apiKey=${API_KEY}`)
     }
-    return ( <div>
-        <h2><span>ACE</span>News</h2>
+    return ( <div className='searchelements'>
+        <h2 id="logo"><span id="ace">ACE</span> News</h2>
         <form>
-            <input type="text" name="search" value={search} onChange={handlechange}/>
-            <button onClick={handlesearch}>Search</button>
+            <input type="text" name="search" value={search} onChange={handleChange} className='input' placeholder='Enter Search Item'/>
+            <button onClick={handleSearch}>Search</button>
         </form>
+        <form>
         <label htmlFor="country">Select Country: </label>
-        <select name="country" id="country" onChange={handleselect}>
+        <select name="country" id="country" onChange={handleSelect} className='input'>
+            <option value="us">United States</option>
             <option value="ae">United Arab Emirates</option>
             <option value="ar">Argentina</option>
             <option value="at">Austria</option>
@@ -64,11 +72,10 @@ function SearchPage({search,setSearch,handlesearch,setCountry}) {
             <option value="tr">Turkey</option>
             <option value="tw">Taiwan</option>
             <option value="ua">Ukraine</option>
-            <option value="us">United States</option>
             <option value="ve">Venezuela</option>
             <option value="za">South Africa</option>
         </select>
-        <button onClick={()=>setCountry('ca')}>click</button>
+        </form>
     </div> );
 }
 
