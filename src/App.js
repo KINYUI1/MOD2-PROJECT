@@ -2,8 +2,7 @@ import {useState,useEffect}  from 'react'
 import './App.css';
 import {Routes,Route} from 'react-router-dom'
 import NewsCatalogue from './pages/NewsCatalogue'
-import Nav from './components/Nav';
-import SearchPage from './components/SearchPage';
+
 import Portfolio from './pages/Portfolio';
 
 function App() {
@@ -84,12 +83,11 @@ function App() {
   // console.log(newsList);
   return (
     <div className="App">
-      <SearchPage search={search} setSearch={setSearch} handleSearch={handleSearch} setCountry={setCountry} setUrl={setUrl}/>
-      <Nav catGeneral={catGeneral} catBusiness={catBusiness} catEntertainment={catEntertainment} catHealth={catHealth} catScience={catScience} catSports={catSports} catTechnology={catTechnology}/>
+      
       
       <Routes>
         <Route path='/' element={<Portfolio/>}/>
-        <Route path='/newscatalogue' element={<NewsCatalogue newsList={newsList} className="catalogueContainer" />}/>
+        <Route path='/newscatalogue' element={<NewsCatalogue newsList={newsList} className="catalogueContainer" search={search} setSearch={setSearch} handleSearch={handleSearch} setCountry={setCountry} setUrl={setUrl} catGeneral={catGeneral} catBusiness={catBusiness} catEntertainment={catEntertainment} catHealth={catHealth} catScience={catScience} catSports={catSports} catTechnology={catTechnology} />}/>
       </Routes>
       
     </div>
