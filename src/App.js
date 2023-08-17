@@ -2,7 +2,6 @@ import {useState,useEffect}  from 'react'
 import './App.css';
 import {Routes,Route} from 'react-router-dom'
 import NewsCatalogue from './pages/NewsCatalogue'
-import NewsPage from './pages/NewsPage'
 import Nav from './components/Nav';
 import SearchPage from './components/SearchPage';
 import Portfolio from './pages/Portfolio';
@@ -90,8 +89,7 @@ function App() {
       
       <Routes>
         <Route path='/' element={<Portfolio/>}/>
-        <Route path='/nowscatalogue' element={<NewsCatalogue newsList={newsList} className="catalogueContainer" />}/>
-        <Route path='/newspage/:title' element={<NewsPage newsList={newsList}/>}/>
+        <Route path='/newscatalogue' element={<NewsCatalogue newsList={newsList} className="catalogueContainer" />}/>
       </Routes>
       
     </div>
