@@ -10,7 +10,7 @@ function Portfolio() {
       </nav>
       <div className="flex">
         <div>
-          <img src='./images/IMG_20230816_154348.jpg' alt="image of clement" className="smallimg"/>
+          <img src='./images/IMG_20230816_154348.jpg' alt=" clement" className="smallimg"/>
           <div>
             <a
               href="https://www.linkedin.com/in/clement-kinyui-ndimuangu-11876b250"
