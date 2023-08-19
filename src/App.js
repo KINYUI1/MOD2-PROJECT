@@ -8,7 +8,7 @@ import Portfolio from './pages/Portfolio';
 function App() {
   const [newsList, setNewsList] = useState([]);
   const [country,setCountry] = useState('us');
-  const API_KEY = `f2ed20b73bed4bff995872e5c0c5f061`
+  const API_KEY = process.env.REACT_APP_NEWSAPI_KEY;
   const [url,setUrl] = useState(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${API_KEY}`)
   const [search,setSearch] = useState('')
   const date = new Date();

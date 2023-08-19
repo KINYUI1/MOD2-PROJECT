@@ -4,7 +4,7 @@ function SearchPage({search,setSearch,handleSearch,setCountry,setUrl}) {
     const handleChange = (e)=>{
         setSearch(e.target.value)
     }
-    const API_KEY = `f2ed20b73bed4bff995872e5c0c5f061`
+    const API_KEY = process.env.REACT_APP_NEWSAPI_KEY;
     const handleSelect = (e)=>{
         e.preventDefault();
        console.log('search',e.target.value);

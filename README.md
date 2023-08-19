@@ -1,4 +1,35 @@
-# Getting Started with Create React App
+<h1> PROJECT TITLE</h1>
+
+PORTFOLIO PROJECT
+<h2>MOTIVATION</h2>
+
+This portfolio project serve as a proof of my react nkowledge and also advertise my skills to outside employers 
+
+<img src='./public/mod2.png'/>
+<img src='./public/acenews.png'/>
+
+## Tech frameworks
+
+built with
+ 
+ HTML
+ CSS
+ JAVASCRIPT
+ REACT JS
+
+ ## Explanation 
+
+ this portfolio site holds many attributes about me when it comes to web dev and will spell out detail explanation of all the skills that i have in my arsenal for immediate use by any company.
+
+## credits
+
+<ul>
+<li>NEWS API</li>
+<li>facebook</li>
+<li>node</li>
+</hl>
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +98,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)  -->

@@ -3,8 +3,8 @@ import '../App.css'
 function Portfolio() {
   return (
     <div className="portfolio">
-      <h2>Portfolio</h2>
-      <nav className="flex">
+      {/* <h2 className="heading font">Portfolio</h2> */}
+      <nav className="flex gap">
         <h2>Clement Kinyui Ndimuangu</h2>
         <p>ndiclementkinyui@gmail.com</p>
       </nav>
@@ -27,7 +27,7 @@ function Portfolio() {
         </div>
         <div className="intro">
           <hr />
-          <h2>
+          <h2 className="font">
             The individual who is capable of developing both client and
             server-side software
           </h2>
@@ -43,7 +43,7 @@ function Portfolio() {
         </div>
       </div>
       <hr />
-      <h2>Skills</h2>
+      <h2 className="heading font">Skills</h2>
       <div className="flex">
         
         <div className="skills">
@@ -70,12 +70,12 @@ function Portfolio() {
             </li>
           </ul>
         </div>
-        <h2 className="skillstitle">Front End Development</h2>
+        <h2 className="skillstitle font">Front End Development</h2>
       </div>
       <hr />
       <div className="flex">
-      <h2 className="skillstitle">Back End Development</h2>
-        <div className="skills">
+      <h2 className="skillstitle font">Back End Development</h2>
+        <div className="skills ">
           <p>
             Build the back-end portion responsible for server-side web
             application logic and integration of the work front-end web
@@ -106,9 +106,10 @@ function Portfolio() {
       <div className="flex"> 
       
       <p className="skills">can build both the front end and the back end of a website.</p>
-      <h2 className="skillstitle">Full Stack Development</h2>
+      <h2 className="skillstitle font">Full Stack Development</h2>
       </div>
-      <h2>Recent projects</h2>
+      <hr/>
+      <h2 className="heading font">Recent projects</h2>
       <div>
         <div className="flex">
           <h3 className="skillstitle">
@@ -125,7 +126,7 @@ function Portfolio() {
           <p className="skills">
             A numbers Guessing Game that gives the player multiple chances to
             pick the right number and quidelines on if the number guessed by the
-            player id greater or less than the actual value. The game has great
+            player is greater or less than the actual value. The game has great
             sound effect for every action taken in the game.
           </p>
           <h3 className="skillstitle">
@@ -133,16 +134,18 @@ function Portfolio() {
           </h3>
         </div>
       </div>
-      <img src="" alt="" />
-      <h2>
+     <hr/>
+      <div className="recomendation">
+      <h2 className="font">
         "Clement has consistently worked to improve on a number of technical
         skills in finding creative solutions for challenging problems. He's your
         go to person for creative web dev."
       </h2>
       <p>Per Scholas Intructional Team</p>
-      <img src="" alt=""/>
+      </div>
+      <img src="./images/IMG20230817161836.jpg" alt="" className="largeimg" />
       <hr />
-      <h2>So why work with me?</h2>
+      <h2 className="font">So why work with me?</h2>
       <p>
         I possess a deep understanding of the event and experiential software
         industry, including its tight timelines, impending deadlines, uncertain
@@ -164,7 +167,7 @@ function Portfolio() {
         punctuality.
       </p>
       <hr />
-      <h2>Lets Chat</h2>
+      <h2 className="font">Lets Chat</h2>
       <div className="flex">
         <p>
           Have a vacant position? Call me at <strong>'301-793-5217' </strong> or

@@ -1,5 +1,6 @@
 *{
   margin: 3px;
+  background-color: #f0f0e8;
 }
 .portfolio{
   margin: 70px;
@@ -26,6 +27,26 @@
 .skillstitle{
   padding: 60px;
   margin-top: 10%;
+}
+.gap{
+  gap: 50%;
+}
+.heading{
+  margin-left: 50%;
+}
+.font{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+}
+a{
+  text-decoration: none;
+}
+.recomendation{
+  margin: 100px;
+}
+.largeimg{
+width: 100%;
+margin-bottom: 100px;
 }
 
 
